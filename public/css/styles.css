@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --amarillo: #EAC926;
+    --color-azul: #03264C; 
+    --color-celeste: #1259c3;
+    --color-grisOscuro: #666;
+    --color-grisClaro: #ebebeb;
+    --color-verde: #39b54a;
+    --color-negro: black;
+    --color-blanco: white;
+    }
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: var(--color-grisClaro);
+}
+.header{
+    width: 100%;
+    background-color:  var(--amarillo);
+    padding: 12px;
+}
+.menu{
+    display: flex;
+}
+.busqueda{
+    display: none;
+}
+.logo{
+    width: 150px;
+}
+.cuotas-tarjeta{
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 12px;
+}
+.menu-hambu{
+    display: block;
+    background-color:var(--color-celeste);
+    color: var(--color-blanco);
+    max-width: 40px;
+    padding: 8px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+.nav{
+    display:none;
+}
+.nav ul{
+    margin: 0;
+    padding: 0;
+}
+.nav ul li a{
+    color: var(--color-negro);
+    display: inline-block;
+    padding: 6px 0;
+}
+.banner{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#ultima-vista{
+    font-size: 24px;
+    text-align: center;
+    color: #666;
+    
+}
+#seccion-ofertas{
+    font-size: 24px;
+    text-align: center;
+    color: var(--color-grisOscuro);
+}
+.productos{
+    padding: 0 15px 15px 15px
+}
+.contenedor-productos1{
+    padding: 15px 0 ;
+}
+.contenedor-productos2{
+    padding: 15px 0 ;
+}
+.articulos{
+    background-color: var(--color-blanco);
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 35px 0;
+}
+.articulos img {
+    width: 100%;
+}
+.product-txt {
+    font-size: 18px;
+}
+.precio-txt {
+    font-size: 16px;
+}
+.modelo-txt {
+    font-size: 16px;
+}
+.footer {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color-blanco);
+}
+.footer-txt{
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+.icono-footer{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.copyright{
+    background-color:var(--color-blanco);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+
+
+@media  (min-width: 768px){ 
+    .menu{
+        display: flex;
+        justify-content: space-around;
+    }
+    .busqueda{
+        display:list-item;
+        width: auto;
+        height: 35px;
+    }
+    .nav{
+        display: block;
+    }
+    .menu-hambu{
+        display: none;
+    }
+    .cuotas-tarjeta{
+        font-size: 2vw;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav ul li{
+        display: inline;
+        padding-left: 5px;
+    }
+    .contenedor-productos1{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+    }
+    .contenedor-productos2{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+    }
+    .articulos{
+        text-align: center;
+        margin: 15px;
+    }
+    .footer{
+        display: flex;
+        background-color: var(--amarillo);
+    }
+    .copyright{
+        display: block;
+        text-align: left;
+        background-color: var(--amarillo) ;
+        padding-left: 20px;
+    }
+}
+
+
+@media  (min-width: 1023px){
+    .contenedor-productos1{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .contenedor-productos2{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+
+@media  (min-width: 1439px){
+
+}

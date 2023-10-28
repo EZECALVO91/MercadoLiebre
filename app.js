@@ -6,7 +6,7 @@ const app = express ();
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.listen (4200, () => {
+app.listen (3030, () => {
     console.log("Servidor corriendo en el puerto 4200");
 });
 

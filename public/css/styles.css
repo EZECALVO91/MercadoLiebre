@@ -30,18 +30,33 @@ body{
 }
 .menu{
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.busqueda-contenedor{
+    width: 50%;
+    padding: 10px;
 }
 .busqueda{
+    display: initial;
+    width: 85%;
+    height: 30px;
+}
+.fa-magnifying-glass{
     display: none;
+    font-size: 18px;
+}
+.logo-contenedor{
+    width: 50%;
 }
 .logo{
     width: 150px;
 }
 .cuotas-tarjeta{
     font-weight: bold;
-    text-align: center;
     padding: 20px 0;
     font-size: 12px;
+    margin: auto;
 }
 .menu-hambu{
     display: block;
@@ -94,36 +109,47 @@ body{
 .articulos{
     background-color: var(--color-blanco);
     margin-bottom: 15px;
-    text-align: center;
-}
-.fa-truck{
-    position: relative;
-    right: 12px;
-    bottom: 6px;
-}
-.fa-circle{
-    font-size: 35px;
-    position: relative;
-    left: 20px;
 }
 .articulos img {
     width: 100%;
+
 }
 .product-texto {
+    position: relative;
     border-top: 1px solid #ebebeb;
     font-size: 18px;
     padding: 15px;
 }
+.fa-truck{
+    position: absolute;
+    right:15px;
+    bottom: 73px;
+}
+.fa-circle{
+    font-size: 35px;
+    position: absolute;
+    right: 9px;
+    bottom: 65px;
+}
+.main_descuento_precio_articulo{
+    display: flex;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
 .precio-txt {
     font-size: 16px;
+    width: 30%;
 }
 .descuento-txt {
     color: #12c427;
     font-size: 15px;
+    width: 70%;
 }
 .modelo-txt {
-    display: none;
+    color: var(--color-grisOscuro);
     font-size: 16px;
+    margin: 0px;
 }
 .footer {
     width: 100%;
@@ -148,15 +174,28 @@ body{
 
 
 
-@media  (min-width: 361px){ 
+@media  (min-width: 768px){ 
     .menu{
         display: flex;
-        justify-content: space-around;
+    }
+    .logo-contenedor{
+        width: 33.3%;
+        outline: 1px solid blue;
+    }
+    .busqueda-contenedor{
+        width: 33.3%;
+        padding: 10px;
     }
     .busqueda{
-        display:list-item;
+        display:initial;
         width: auto;
         height: 35px;
+    }
+    .fa-magnifying-glass{
+        display: initial;
+    }
+    .cuotas-tarjeta{
+        width: 33.3%;
     }
     .menu-hambu{
         display: none;
@@ -172,6 +211,10 @@ body{
         display: inline;
         padding-left: 10px;
     }
+    .banner{
+        width: 100%;
+        margin-bottom: 20px;
+    }
     .contenedor-productos1{
         display: grid;
         grid-template-columns: repeat(2,2fr);
@@ -181,12 +224,8 @@ body{
         grid-template-columns: repeat(2,2fr);
     }
     .articulos{
-        text-align: center;
         margin: 15px;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .modelo-txt{
-        display: initial;
     }
     .footer{
         display: flex;
@@ -201,7 +240,7 @@ body{
 }
 
 
-@media  (min-width: 769px){
+@media  (min-width: 1024px){
     .contenedor-productos1{
         display: grid;
         grid-template-columns: repeat(4,1fr);
@@ -213,6 +252,12 @@ body{
 }
 
 
-@media  (min-width: 1439px){
+@media  (min-width: 1024px){
+    .cuotas-tarjeta{
+        font-size: 1.5vw;
+    }
+    .busqueda{
+        width: 25vw;
+    }
 
 }

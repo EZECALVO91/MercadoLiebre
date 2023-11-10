@@ -1,0 +1,40 @@
+
+.main_login{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5%;
+}
+.articulo_login_main{
+    padding: 18px;
+}
+.btn_login_main{
+    width: 60%;
+    height: 30px;
+    background-color: var(--color-celeste);
+    color: var(--color-blanco);
+    border: 1px solid var(--color-celeste);
+    border-radius: 5px;
+}
+.input_login{
+    border: 1px solid var(--color-grisClaro);
+    width: 95%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+@media(min-width: 768px){
+    .input_login{
+        width: 60%;
+        height: 35px;
+    }
+    .articulo_login_main{
+        padding: 13px;
+    }
+}
+
+@media  (min-width: 1024px){
+    .input_login{
+        height: 35px;
+    }
+}
